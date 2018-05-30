@@ -11,7 +11,7 @@ public class Problemas extends Mensagens{
 			mensagem = "Próxima";
 			break;
 		case 3:
-			mensagem = "Sair";
+			mensagem = "Denuncia";
 			break;
 		case 4:
 			mensagem = "Sair";
