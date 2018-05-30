@@ -11,6 +11,7 @@ public class Problemas extends Mensagens implements Escolhas{
 		this.opcao = opcao;
 	}
 
+	@Override
 	public String escolha(int resposta) {
 		String mensagem = "";
 		switch (resposta) {
@@ -30,5 +31,20 @@ public class Problemas extends Mensagens implements Escolhas{
 		}
 		
 		return mensagem;
+	}
+	
+
+	@Override
+	public String mensagem(int atual) {
+		switch (atual) {
+		case 1:
+			return "mensagem1";
+		case 2:
+			return "mensagem2";
+		case 3:
+			return "mensagem3";
+		default:
+			return null;
+		}
 	}
 }
