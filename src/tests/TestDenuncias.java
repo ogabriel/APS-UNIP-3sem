@@ -10,21 +10,22 @@ import application.Denuncias;
 class TestDenuncias {
 
 	@Test
-	void opcaoIbama() {
+	void escolhaIbama() {
 		Denuncias d = new Denuncias();
-		assertEquals(d.escolha(1), "Ibama");
+		assertEquals(d.mensagem(1), "Ibama");
 	}
 	
 	@Test
-	void opcaoPA() {
+	void escolhaPA() {
 		Denuncias d = new Denuncias();
-		assertEquals(d.escolha(2), "Policia ambiental");
+		assertEquals(d.mensagem(2), "Policia ambiental");
 	}
 	
 	@Test
-	void opcaoSair() {
+	void escolhaSair() {
 		Denuncias d = new Denuncias();
-		assertEquals(d.escolha(3), "Sair");
+		assertEquals(d.mensagem(3), null);
 	}
-
+	
+	
 }
