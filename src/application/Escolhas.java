@@ -1,5 +1,5 @@
 package application;
 
 public interface Escolhas {
-	public String escolha(int num);
+	public String escolha(int resposta);
 }

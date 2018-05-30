@@ -11,9 +11,9 @@ public class Problemas extends Mensagens implements Escolhas{
 		this.opcao = opcao;
 	}
 
-	public String escolha(int num) {
+	public String escolha(int resposta) {
 		String mensagem = "";
-		switch (num) {
+		switch (resposta) {
 		case 1:
 			mensagem = "Solução";
 			break;

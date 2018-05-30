@@ -1,9 +1,9 @@
 package application;
 
 public class Solucoes extends Mensagens implements Escolhas{
-	public String escolha(int num) {
+	public String escolha(int resposta) {
 		String mensagem = "";
-		switch (num) {
+		switch (resposta) {
 		case 1:
 			mensagem = "Denunciar";
 			break;
