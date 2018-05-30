@@ -1,6 +1,16 @@
 package application;
 
 public class Problemas extends Mensagens{
+	private int opcao;
+	
+	public int getOpcao() {
+		return opcao;
+	}
+
+	public void setOpcao(int opcao) {
+		this.opcao = opcao;
+	}
+
 	public String escolha(int num) {
 		String mensagem = "";
 		switch (num) {
