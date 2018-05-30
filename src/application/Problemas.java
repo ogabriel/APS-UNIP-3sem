@@ -1,6 +1,6 @@
 package application;
 
-public class Problemas extends Mensagens{
+public class Problemas extends Mensagens implements Escolhas{
 	private int opcao;
 	
 	public int getOpcao() {

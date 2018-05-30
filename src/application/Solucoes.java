@@ -1,6 +1,6 @@
 package application;
 
-public class Solucoes extends Mensagens{
+public class Solucoes extends Mensagens implements Escolhas{
 	public String escolha(int num) {
 		String mensagem = "";
 		switch (num) {

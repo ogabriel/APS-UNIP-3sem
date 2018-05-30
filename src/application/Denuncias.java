@@ -1,6 +1,6 @@
 package application;
 
-public class Denuncias extends Mensagens {
+public class Denuncias extends Mensagens implements Escolhas{
 	public String escolha(int num) {
 		String mensagem = "";
 		
