@@ -1,7 +1,9 @@
 package application;
 
 public class Denuncias extends Mensagens implements Escolhas{
-	public String escolha(int resposta) {
+
+	//	TODO: mudar para mensagem(), pq aqui so mostra informacao
+	public void escolha(int resposta) {
 		String mensagem = "";
 		
 		switch(resposta) {
