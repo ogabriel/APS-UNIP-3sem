@@ -2,21 +2,48 @@ package application;
 
 public class Denuncias extends Mensagens implements Escolhas{
 
-	//	TODO: mudar para mensagem(), pq aqui so mostra informacao
-	public void escolha(int resposta) {
-		String mensagem = "";
-		
+	@Override
+	public void continueMenu() {
+		boolean exit;
+		do {
+			Menu.menu("Ibama", "Polícia Ambiental", "Sair");
+			int opcao = Menu.input();
+			exit = escolha(opcao);
+		} while (exit);	
+	}
+	
+	@Override
+	public boolean escolha(int resposta) {		
 		switch(resposta) {
 			case 1:
-				mensagem = "Ibama";
-			break;
+				this.opcao = 1;
+				this.mensagem();
+				return false;
 			case 2:
-				mensagem = "Polícia ambiental";
-			break;
+				this.opcao = 2;
+				this.mensagem();
+				return false;
 			case 3:
-				mensagem = "Sair";
-			break;
+				return true;
+			default:
+				Menu.show("Opção invalida");
+				return false;
 		}
-		return mensagem;
 	}
+
+	@Override
+	public String mensagem() {
+		
+		// TODO: arriscar um show logo aqui, pra exibir a mensagem
+		switch (this.opcao) {
+		case 1:
+			return "mensagem Ibama";
+		case 2:
+			return "mensagem PA";
+		default:
+			return null;
+		}
+	}
+
+
 }
