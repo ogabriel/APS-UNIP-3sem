@@ -33,7 +33,7 @@ public class Problemas extends Mensagens implements Escolhas{
 		case 4:
 			return true;
 		default:
-			Menu.show("Inserção incorreta");
+			Menu.show("Opção invalida");
 			return false;	
 		}
 	}
