@@ -1,5 +1,5 @@
 package application;
 
 public interface Escolhas {
-	public void escolha(int resposta);
+	public boolean escolha(int resposta);
 }
