@@ -2,25 +2,32 @@ package application;
 
 public class Engine implements Escolhas{
 	public void start() {
-		Menu.menu("Problemas ambientais", "Denuncias", "Sair");
-		int opcao = Menu.input();
-		escolha(opcao);
+		boolean exit;
+		do {
+			Menu.menu("Problemas ambientais", "Denuncias", "Sair");
+			int opcao = Menu.input();
+			exit = escolha(opcao);
+		} while (exit);
 	}
 	
-	public void escolha(int resposta) {
-		// TODO: organizar iniciacao das classes e os metodos de exibicao
+	@Override
+	public boolean escolha(int resposta) {
 		switch (resposta) {
 		case 1:
 			Problemas p = new Problemas();
-			p.play();
+			p.continueMenu();
 			p = null;
-			break;
+			return false;
 		case 2:
 			Denuncias d = new Denuncias();
-			d.play();
+			d.continueMenu();
 			d = null;
-			break;
-		// TODO: metodo de exit ou retorno
+			return false;
+		case 3:
+			return true;
+		default:
+			Menu.show("Opção incorreta");
+			return false;
 		}
 	}
 	
