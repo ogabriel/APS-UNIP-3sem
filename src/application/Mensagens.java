@@ -1,6 +1,15 @@
 package application;
 
 public abstract class Mensagens {
+	protected int opcao;
+	
+	public int getOpcao() {
+		return opcao;
+	}
+
+	public void setOpcao(int opcao) {
+		this.opcao = opcao;
+	}
 	public abstract String mensagem();
-	public abstract Boolean continueMenu();
+	public abstract void continueMenu();
 }
