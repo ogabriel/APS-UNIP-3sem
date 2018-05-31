@@ -7,18 +7,6 @@ import org.junit.jupiter.api.Test;
 import application.*;
 
 class TestSolucoes {
-
-	@Test
-	void escolhaD() {
-		Solucoes s = new Solucoes();
-		assertEquals(s.escolha(1), new Denuncias());
-	}
-	
-	@Test
-	void EscolhaSair() {
-		Solucoes s = new Solucoes();
-		assertEquals(s.escolha(1), null);
-	}
 	
 	@Test
 	void mensagem1() {
