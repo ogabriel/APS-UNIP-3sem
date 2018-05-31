@@ -6,8 +6,8 @@ public class Engine implements Escolhas{
 		Mensagens opcao = escolha(Menu.input());
 	}
 	
-	public Mensagens escolha(int resposta) {
-		Mensagens m = null;
+	public void escolha(int resposta) {
+		// TODO: organizar iniciacao das classes e os metodos de exibicao
 		switch (resposta) {
 		case 1:
 			m = new Problemas();
