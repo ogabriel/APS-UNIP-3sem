@@ -3,9 +3,8 @@ package application;
 public class Launcher {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//colocar metodo iniciacao do engine
 		mensagem();
-		MainMenu menu = new MainMenu();
 		mensagem();		
 		
 	}
