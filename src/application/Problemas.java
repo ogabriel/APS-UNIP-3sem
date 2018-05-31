@@ -1,42 +1,46 @@
 package application;
 
 public class Problemas extends Mensagens implements Escolhas{
-	private int opcao;
-	
-	public int getOpcao() {
-		return opcao;
-	}
-
-	public void setOpcao(int opcao) {
-		this.opcao = opcao;
-	}
-
+		
 	@Override
-	public String escolha(int resposta) {
-		String mensagem = "";
+	public void continueMenu() {
+		boolean exit;
+		do {
+			Menu.menu("Como resolver esse problema", "Proximo problema", "Denunciar", "Sair");
+			int opcao = Menu.input();
+			exit = escolha(opcao);
+		
+		} while (exit);
+	}
+	
+	@Override
+	public boolean escolha(int resposta) {
 		switch (resposta) {
 		case 1:
-			mensagem = "Solução";
-			break;
+			Solucoes s = new Solucoes();
+			s.continueMenu();
+			s = null;
+			return false;
 		case 2:
-			mensagem = "Próxima";
-			break;
+			this.opcao++;
+			mensagem();
+			return false;
 		case 3:
-			mensagem = "Denuncia";
-			break;
+			Denuncias d = new Denuncias();
+			d.continueMenu();
+			d = null;
+			return false;
 		case 4:
-			mensagem = "Sair";
-			break;	
-		
+			return true;
+		default:
+			Menu.show("Inserção incorreta");
+			return false;	
 		}
-		
-		return mensagem;
 	}
 	
-
 	@Override
-	public String mensagem(int atual) {
-		switch (atual) {
+	public String mensagem() {
+		switch (this.opcao) {
 		case 1:
 			return "mensagem1";
 		case 2:
@@ -47,4 +51,5 @@ public class Problemas extends Mensagens implements Escolhas{
 			return null;
 		}
 	}
+	
 }
