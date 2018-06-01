@@ -1,7 +1,5 @@
 package application;
 
-import java.util.Scanner;
-
 public class Menu {
 	
 	public static void menu(String one, String two, String three, String four) {
@@ -17,15 +15,6 @@ public class Menu {
 	public static void menu(String one, String two) {
 		System.out.println("1 - " + one);
 		System.out.println("2 - " + two);
-	}
-	
-	public static int input() {
-		Scanner scan = new Scanner(System.in);
-		scan.close();
-		String s = scan.next();
-		int num = Integer.parseInt(s);
-		
-		return num;
 	}
 	
 	public static void show(String mensagem) {
