@@ -1,6 +1,9 @@
 package application;
 
+import java.util.Scanner;
+
 public class Menu {
+	public static Scanner scan = new Scanner(System.in);
 	
 	public static void menu(String one, String two, String three, String four) {
 		menu(one, two, three);
@@ -19,5 +22,10 @@ public class Menu {
 	
 	public static void show(String mensagem) {
 		System.out.println(mensagem);
+	}
+	
+	public static int input() {
+		int num = scan.nextInt();
+		return num;
 	}
 }
