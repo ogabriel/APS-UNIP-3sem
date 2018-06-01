@@ -7,8 +7,8 @@ public class Denuncias extends Mensagens implements Escolhas{
 		boolean exit;
 		do {
 			Menu.menu("Ibama", "Polícia Ambiental", "Sair");
-			int opcao = Menu.input();
-			exit = escolha(opcao);
+			int resposta = Menu.input();
+			exit = escolha(resposta);
 		} while (exit);	
 	}
 	

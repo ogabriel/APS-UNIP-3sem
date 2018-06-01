@@ -7,8 +7,8 @@ public class Problemas extends Mensagens implements Escolhas{
 		boolean exit;
 		do {
 			Menu.menu("Como resolver esse problema", "Proximo problema", "Denunciar", "Sair");
-			int opcao = Menu.input();
-			exit = escolha(opcao);
+			int resposta = Menu.input();
+			exit = escolha(resposta);
 		
 		} while (exit);
 	}

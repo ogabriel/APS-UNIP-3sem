@@ -5,8 +5,8 @@ public class Engine implements Escolhas{
 		boolean exit;
 		do {
 			Menu.menu("Problemas ambientais", "Denuncias", "Sair");
-			int opcao = Menu.input();
-			exit = escolha(opcao);
+			int resposta = Menu.input();
+			exit = escolha(resposta);
 		} while (exit);
 	}
 	
