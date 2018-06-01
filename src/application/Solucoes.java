@@ -6,6 +6,7 @@ public class Solucoes extends Mensagens implements Escolhas{
 	public void continueMenu() {
 		boolean exit = false;
 		while(!exit) {	
+			Menu.show(mensagem());
 			Menu.menu("Denunciar problema", "Sair");
 			int resposta = Menu.input();
 			exit = escolha(resposta);

@@ -5,8 +5,10 @@ public class Problemas extends Mensagens implements Escolhas{
 	@Override
 	public void continueMenu() {		
 		boolean exit = false;
+		this.opcao = 1;
+		Menu.show("mensagem dahora");
 		while(!exit){
-			Menu.show("mensagem dahora");
+			Menu.show(mensagem());
 			Menu.menu("Como resolver esse problema", "Proximo problema", "Denunciar", "Sair");
 			int resposta = Menu.input();
 			exit = escolha(resposta);
@@ -18,6 +20,7 @@ public class Problemas extends Mensagens implements Escolhas{
 		switch (resposta) {
 		case 1:
 			Solucoes s = new Solucoes();
+			s.setOpcao(this.opcao);
 			s.continueMenu();
 			s = null;
 			return false;
