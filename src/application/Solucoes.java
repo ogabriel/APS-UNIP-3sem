@@ -1,15 +1,19 @@
 package application;
 
+import java.util.Scanner;
+
 public class Solucoes extends Mensagens implements Escolhas{
 
 	@Override
 	public void continueMenu() {
+		Scanner scan = new Scanner(System.in);
 		boolean exit;
 		do {
 			Menu.menu("Denunciar problema", "Sair");
-			int resposta = Menu.input();
+			int resposta = scan.nextInt();
 			exit = escolha(resposta);
-		} while (exit);
+		} while (!exit);
+		scan.close();
 	}
 	
 	@Override

@@ -1,13 +1,17 @@
 package application;
 
+import java.util.Scanner;
+
 public class Engine implements Escolhas{
 	public void start() {
+		Scanner scan = new Scanner(System.in);
 		boolean exit;
 		do {
 			Menu.menu("Problemas ambientais", "Denuncias", "Sair");
-			int resposta = Menu.input();
-			exit = escolha(resposta);
-		} while (exit);
+			int resposta = scan.nextInt();
+			exit = escolha(resposta);			
+		} while (!exit);
+		scan.close();
 	}
 	
 	@Override
@@ -29,10 +33,5 @@ public class Engine implements Escolhas{
 			Menu.show("Opção incorreta");
 			return false;
 		}
-	}
-	
-	
-	public String opcao() {
-		return null;
 	}
 }
