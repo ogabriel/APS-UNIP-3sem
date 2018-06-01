@@ -2,8 +2,6 @@ package application;
 
 import java.util.Scanner;
 
-import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
-
 public class Menu {
 	
 	public static void menu(String one, String two, String three, String four) {
