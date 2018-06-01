@@ -1,29 +1,29 @@
-package tests;
+package application;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import application.*;
-
 class TestSolucoes {
 	
 	@Test
 	void mensagem1() {
-		Problemas p = new Problemas();
-		assertEquals(p.mensagem(1), "mensagem1");
+		Solucoes s = new Solucoes();
+		s.setOpcao(1);		
+		assertEquals(s.mensagem(), "mensagem1");
 	}
 	
 	@Test
 	void mensagem2() {
-		Problemas p = new Problemas();
-		assertEquals(p.mensagem(2), "mensagem2");
+		Solucoes s = new Solucoes();
+		s.setOpcao(2);		
+		assertEquals(s.mensagem(), "mensagem2");
 	}
 	
 	@Test
 	void mensagem3() {
-		Problemas p = new Problemas();
-		assertEquals(p.mensagem(3), "mensagem3");
+		Solucoes s = new Solucoes();
+		s.setOpcao(1);		
+		assertEquals(s.mensagem(), "mensagem1");
 	}
-
 }
