@@ -1,7 +1,7 @@
 package menu;
 
 public abstract class Menu {
-	protected int opcao;
+	private int opcao;
 	
 	public int getOpcao() {
 		return opcao;

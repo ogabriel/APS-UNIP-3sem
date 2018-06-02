@@ -21,11 +21,11 @@ public class Denuncias extends Menu implements Mensagens{
 	public boolean escolha(int resposta) {		
 		switch(resposta) {
 			case 1:
-				this.opcao = 1;
+				this.setOpcao(1);
 				Tools.show(mensagem());
 				return false;
 			case 2:
-				this.opcao = 2;
+				this.setOpcao(2);
 				Tools.show(mensagem());
 				return false;
 			case 3:
@@ -38,7 +38,7 @@ public class Denuncias extends Menu implements Mensagens{
 
 	@Override
 	public String mensagem() {
-		switch (this.opcao) {
+		switch (getOpcao()) {
 		case 1:
 			return "mensagem Ibama";
 		case 2:

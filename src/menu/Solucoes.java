@@ -33,7 +33,7 @@ public class Solucoes extends Menu implements Mensagens{
 
 	@Override
 	public String mensagem() {
-		switch (this.opcao) {
+		switch (getOpcao()) {
 		case 1:
 			return "mensagem1";
 		case 2:
