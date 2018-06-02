@@ -5,9 +5,9 @@ import application.Tools;
 public class Principal extends Menu {
 	@Override
 	public void continueMenu() {	
-		Tools.show("Este programa tem como interesse educacional de ensinar as pessoas sobre os "
-				+ "problemas ocasionadas pelas atividades humanas e consequente disso, ensinar "
-				+ "meios de acabar com tais problemas e/ou mostras as forams de denuncias possíveis");
+		Tools.show("Este programa tem como interesse educacional de ensinar as pessoas sobre os\n"
+				+ "problemas ocasionadas pelas atividades humanas e consequente disso, ensinar\n"
+				+ "meios de acabar com tais problemas e/ou mostras as forams de denuncias possíveis\n");
 		boolean exit = false;
 		while(!exit) {
 			Tools.show("Opções disponíveis:");
