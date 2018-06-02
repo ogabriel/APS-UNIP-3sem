@@ -2,7 +2,7 @@ package menu;
 
 import application.Tools;
 
-public class Solucoes extends Mensagens implements Escolhas{
+public class Solucoes extends Menu implements Mensagens{
 
 	@Override
 	public void continueMenu() {

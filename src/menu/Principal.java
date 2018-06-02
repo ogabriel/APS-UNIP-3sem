@@ -2,7 +2,7 @@ package menu;
 
 import application.Tools;
 
-public class Principal extends Mensagens implements Escolhas{
+public class Principal extends Menu {
 	@Override
 	public void continueMenu() {	
 		boolean exit = false;
@@ -33,11 +33,5 @@ public class Principal extends Mensagens implements Escolhas{
 			Tools.show("Opção incorreta");
 			return false;
 		}
-	}
-
-	@Override
-	public String mensagem() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 }

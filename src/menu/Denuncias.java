@@ -2,7 +2,7 @@ package menu;
 
 import application.Tools;
 
-public class Denuncias extends Mensagens implements Escolhas{
+public class Denuncias extends Menu implements Mensagens{
 
 	
 	@Override
