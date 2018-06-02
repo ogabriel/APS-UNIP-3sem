@@ -8,17 +8,17 @@ public class Tools {
 	
 	public static void menu(String one, String two, String three, String four) {
 		menu(one, two, three);
-		System.out.println("4 - " + four);
+		show("4 - " + four);
 	}
 	
 	public static void menu(String one, String two, String three) {
 		menu(one, two);
-		System.out.println("3 - " + three);
+		show("3 - " + three);
 		
 	}
 	public static void menu(String one, String two) {
-		System.out.println("1 - " + one);
-		System.out.println("2 - " + two);
+		show("1 - " + one);
+		show("2 - " + two);
 	}
 	
 	public static void show(String mensagem) {
@@ -32,7 +32,9 @@ public class Tools {
 		} catch (InputMismatchException e) {
 			show("Só são permitidos números");
 			scan.next();
-		}		
+		} catch (Exception e) {
+			show(e.getMessage());
+		}
 		return num;
 	}
 }
