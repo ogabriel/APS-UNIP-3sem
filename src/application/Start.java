@@ -5,10 +5,13 @@ import menu.Principal;
 public class Start {
 
 	public static void main(String[] args) {
-		//colocar metodo iniciacao do engine
 		logo();
-		Principal e = new Principal();
-		e.continueMenu();
+		try {
+			Principal e = new Principal();
+			e.continueMenu();
+		} catch (Exception e) {
+			Tools.show(e.getMessage());
+		}
 		logo();		
 		
 	}
