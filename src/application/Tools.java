@@ -1,5 +1,6 @@
 package application;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Tools {
@@ -25,7 +26,13 @@ public class Tools {
 	}
 	
 	public static int input() {
-		int num = scan.nextInt();
+		int num = 0; 
+		try {
+			num = scan.nextInt();
+		} catch (InputMismatchException e) {
+			show("Só são permitidos números");
+			scan.next();
+		}		
 		return num;
 	}
 }
