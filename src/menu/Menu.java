@@ -1,6 +1,6 @@
 package menu;
 
-public abstract class Mensagens {
+public abstract class Menu {
 	protected int opcao;
 	
 	public int getOpcao() {
@@ -10,6 +10,6 @@ public abstract class Mensagens {
 	public void setOpcao(int opcao) {
 		this.opcao = opcao;
 	}
-	public abstract String mensagem();
+	public abstract boolean escolha(int resposta);
 	public abstract void continueMenu();
 }

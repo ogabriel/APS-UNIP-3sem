@@ -1,5 +1,5 @@
 package menu;
 
-public interface Escolhas {
-	public boolean escolha(int resposta);
+public interface Mensagens {
+	public abstract String mensagem();
 }
