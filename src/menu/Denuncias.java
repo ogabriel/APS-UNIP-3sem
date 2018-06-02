@@ -8,8 +8,9 @@ public class Denuncias extends Menu implements Mensagens{
 	@Override
 	public void continueMenu() {
 		boolean exit = false;
-		Tools.show("mensagem dahora");
+		Tools.show("Os dois meios mais eficiêntes de denuncias no nosso pais atualmente são o Ibama e a Polícia Ambiental");
 		while(!exit) {		
+			Tools.show("Opções disponíveis:");
 			Tools.menu("Ibama", "Polícia Ambiental", "Sair");
 			int resposta = Tools.input();
 			exit = escolha(resposta);

@@ -6,10 +6,11 @@ public class Problemas extends Menu implements Mensagens{
 		
 	@Override
 	public void continueMenu() {		
+		Tools.show("É de conhecimento geral que a estadia inconsiente do ser humano no nesse planeta, gera diversos problemas");
 		boolean exit = false;
 		this.opcao = 1;
-		Tools.show("mensagem dahora");
 		while(!exit){
+			Tools.show("Estudo de caso nº" + this.opcao + ":");
 			Tools.show(mensagem());
 			Tools.menu("Como resolver esse problema", "Proximo problema", "Denunciar", "Sair");
 			int resposta = Tools.input();

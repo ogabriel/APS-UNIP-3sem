@@ -5,9 +5,12 @@ import application.Tools;
 public class Principal extends Menu {
 	@Override
 	public void continueMenu() {	
+		Tools.show("Este programa tem como interesse educacional de ensinar as pessoas sobre os "
+				+ "problemas ocasionadas pelas atividades humanas e consequente disso, ensinar "
+				+ "meios de acabar com tais problemas e/ou mostras as forams de denuncias possíveis");
 		boolean exit = false;
 		while(!exit) {
-			Tools.show("mensagem dahora");
+			Tools.show("Opções disponíveis:");
 			Tools.menu("Problemas ambientais", "Denuncias", "Sair");
 			int resposta = Tools.input();
 			exit = escolha(resposta);		
