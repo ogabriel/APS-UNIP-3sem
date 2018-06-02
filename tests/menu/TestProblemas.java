@@ -1,9 +1,11 @@
-package application;
+package menu;
 
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import menu.Problemas;
 
 class TestProblemas {
 	

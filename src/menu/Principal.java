@@ -1,13 +1,15 @@
-package application;
+package menu;
 
-public class Engine extends Mensagens implements Escolhas{
+import application.Tools;
+
+public class Principal extends Mensagens implements Escolhas{
 	@Override
 	public void continueMenu() {	
 		boolean exit = false;
 		while(!exit) {
-			Menu.show("mensagem dahora");
-			Menu.menu("Problemas ambientais", "Denuncias", "Sair");
-			int resposta = Menu.input();
+			Tools.show("mensagem dahora");
+			Tools.menu("Problemas ambientais", "Denuncias", "Sair");
+			int resposta = Tools.input();
 			exit = escolha(resposta);		
 		}
 	}
@@ -28,7 +30,7 @@ public class Engine extends Mensagens implements Escolhas{
 		case 3:
 			return true;
 		default:
-			Menu.show("Opção incorreta");
+			Tools.show("Opção incorreta");
 			return false;
 		}
 	}

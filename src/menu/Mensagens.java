@@ -1,4 +1,4 @@
-package application;
+package menu;
 
 public abstract class Mensagens {
 	protected int opcao;

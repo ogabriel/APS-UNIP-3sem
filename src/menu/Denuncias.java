@@ -1,4 +1,6 @@
-package application;
+package menu;
+
+import application.Tools;
 
 public class Denuncias extends Mensagens implements Escolhas{
 
@@ -6,10 +8,10 @@ public class Denuncias extends Mensagens implements Escolhas{
 	@Override
 	public void continueMenu() {
 		boolean exit = false;
-		Menu.show("mensagem dahora");
+		Tools.show("mensagem dahora");
 		while(!exit) {		
-			Menu.menu("Ibama", "Polícia Ambiental", "Sair");
-			int resposta = Menu.input();
+			Tools.menu("Ibama", "Polícia Ambiental", "Sair");
+			int resposta = Tools.input();
 			exit = escolha(resposta);
 		}	
 	}
@@ -19,16 +21,16 @@ public class Denuncias extends Mensagens implements Escolhas{
 		switch(resposta) {
 			case 1:
 				this.opcao = 1;
-				Menu.show(mensagem());
+				Tools.show(mensagem());
 				return false;
 			case 2:
 				this.opcao = 2;
-				Menu.show(mensagem());
+				Tools.show(mensagem());
 				return false;
 			case 3:
 				return true;
 			default:
-				Menu.show("Opção invalida");
+				Tools.show("Opção invalida");
 				return false;
 		}
 	}

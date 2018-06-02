@@ -1,11 +1,13 @@
 package application;
 
-public class Launcher {
+import menu.Principal;
+
+public class Start {
 
 	public static void main(String[] args) {
 		//colocar metodo iniciacao do engine
 		logo();
-		Engine e = new Engine();
+		Principal e = new Principal();
 		e.continueMenu();
 		logo();		
 		

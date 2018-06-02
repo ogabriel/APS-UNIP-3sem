@@ -1,4 +1,6 @@
-package application;
+package menu;
+
+import application.Tools;
 
 public class Problemas extends Mensagens implements Escolhas{
 		
@@ -6,11 +8,11 @@ public class Problemas extends Mensagens implements Escolhas{
 	public void continueMenu() {		
 		boolean exit = false;
 		this.opcao = 1;
-		Menu.show("mensagem dahora");
+		Tools.show("mensagem dahora");
 		while(!exit){
-			Menu.show(mensagem());
-			Menu.menu("Como resolver esse problema", "Proximo problema", "Denunciar", "Sair");
-			int resposta = Menu.input();
+			Tools.show(mensagem());
+			Tools.menu("Como resolver esse problema", "Proximo problema", "Denunciar", "Sair");
+			int resposta = Tools.input();
 			exit = escolha(resposta);
 		}
 	}
@@ -36,7 +38,7 @@ public class Problemas extends Mensagens implements Escolhas{
 		case 4:
 			return true;
 		default:
-			Menu.show("Opção invalida");
+			Tools.show("Opção invalida");
 			return false;	
 		}
 	}
