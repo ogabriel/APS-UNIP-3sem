@@ -2,7 +2,7 @@ package application;
 
 import java.util.Scanner;
 
-public class Menu {
+public class Tools {
 	public static Scanner scan = new Scanner(System.in);
 	
 	public static void menu(String one, String two, String three, String four) {
