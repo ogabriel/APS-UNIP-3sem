@@ -15,7 +15,7 @@ public class Problemas extends Menu implements Mensagens{
 		while(!exit){
 			Tools.show("\nEstudo de caso nº" + getOpcao() + ":");
 			Tools.show(mensagem());
-			Tools.menu("Como resolver esse problema", "Proximo problema", "Denunciar", "Sair");
+			Tools.menu("Como resolver esse problema", "Proximo problema", "Problema anterior", "Denunciar", "Sair");
 			int resposta = Tools.input();
 			exit = escolha(resposta);
 		}
@@ -36,18 +36,27 @@ public class Problemas extends Menu implements Mensagens{
 				mensagem();
 				return false;
 			} else {
-				Tools.show("limite atingido");
+				Tools.show("\nlimite atingido");
 				return false;
 			}
 		case 3:
+			if (getOpcao() > 1) {
+				this.setOpcao(getOpcao() - 1);
+				mensagem();
+				return false;
+			} else {
+				Tools.show("\nlimite atingido");
+				return false;
+			}		
+		case 4:
 			Denuncias d = new Denuncias();
 			d.continueMenu();
 			d = null;
 			return false;
-		case 4:
+		case 5:
 			return true;
 		default:
-			Tools.show("Opção invalida");
+			Tools.show("Opção invalida\n");
 			return false;	
 		}
 	}
