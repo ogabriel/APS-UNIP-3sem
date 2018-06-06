@@ -6,6 +6,11 @@ import java.util.Scanner;
 public class Tools {
 	public static Scanner scan = new Scanner(System.in);
 	
+	public static void menu(String one, String two, String three, String four, String five) {
+		menu(one, two, three, four);
+		show("5 - " + five);
+	}
+	
 	public static void menu(String one, String two, String three, String four) {
 		menu(one, two, three);
 		show("4 - " + four);
