@@ -14,5 +14,5 @@ Nosso programa é um diálogo por meio de menus, por meio dos números correspon
 
 APSs anteriores:
 -----------
-**APS 2º semestre de 2017:**  [CLIQUE AQUI](https://github.com/ogabriel/APS-UNIP-2sem)
-**APS 1º semestre  de 2017:** [CLIQUE AQUI](https://github.com/ogabriel/APS-UNIP-1sem)
+* **APS 2º semestre de 2017:**  [CLIQUE AQUI](https://github.com/ogabriel/APS-UNIP-2sem)
+* **APS 1º semestre  de 2017:** [CLIQUE AQUI](https://github.com/ogabriel/APS-UNIP-1sem)
